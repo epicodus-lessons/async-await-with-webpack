@@ -1,11 +1,11 @@
 {
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": 2017,
         "sourceType": "module"
     },
     "extends": "eslint:recommended",
     "env": {
-      "es6": true,
+      # "es6": true,
       "browser": true,
       "jquery": true,
       "node": true

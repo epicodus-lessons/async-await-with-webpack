@@ -4,6 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
+
 module.exports = {
   entry: './src/weather-interface.js',
   output: {
@@ -49,7 +50,7 @@ module.exports = {
         ],
         loader: "babel-loader",
         options: {
-          presets: ['es2015']
+          babelrc: true
         }
       }
     ]
