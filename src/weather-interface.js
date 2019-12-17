@@ -6,9 +6,11 @@ $(document).ready(function() {
     const city = $('#location').val();
     $('#location').val("");
 
+    let response;
+
     (async () => {
       let weatherService = new WeatherService();
-      const response = await weatherService.getWeatherByCity(city);
+      response = await weatherService.getWeatherByCity(city);
       getElements(response);
     })();
 
